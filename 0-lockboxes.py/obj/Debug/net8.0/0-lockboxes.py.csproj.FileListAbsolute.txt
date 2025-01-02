@@ -1,5 +1,0 @@
-/home/sgc91/ar_vr_1st/holbertonschool-interview/0-lockboxes.py/obj/Debug/net8.0/0-lockboxes.py.GeneratedMSBuildEditorConfig.editorconfig
-/home/sgc91/ar_vr_1st/holbertonschool-interview/0-lockboxes.py/obj/Debug/net8.0/0-lockboxes.py.AssemblyInfoInputs.cache
-/home/sgc91/ar_vr_1st/holbertonschool-interview/0-lockboxes.py/obj/Debug/net8.0/0-lockboxes.py.AssemblyInfo.cs
-/home/sgc91/ar_vr_1st/holbertonschool-interview/0-lockboxes.py/obj/Debug/net8.0/0-lockboxes.py.csproj.CoreCompileInputs.cache
-/home/sgc91/ar_vr_1st/holbertonschool-interview/0-lockboxes.py/obj/Debug/net8.0/0-lockboxes.py.sourcelink.json
