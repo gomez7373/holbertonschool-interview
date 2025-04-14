@@ -8,6 +8,7 @@
 void swap_values(heap_t *a, heap_t *b)
 {
 	int temp = a->n;
+    
 	a->n = b->n;
 	b->n = temp;
 }
