@@ -22,28 +22,27 @@ def print_stats():
         if status_codes[code] > 0:
             print("{}: {}".format(code, status_codes[code]))
 
-line_count = 0
-
-try:
-    for line in sys.stdin:
-        line = line.strip()
-        parts = line.split()
-        if len(parts) >= 7:
-            try:
-                status = parts[-2]
-                size = int(parts[-1])
-                total_size += size
-                if status in status_codes:
-                    status_codes[status] += 1
-            except Exception:
-                pass
-        line_count += 1
-        if line_count % 10 == 0:
-            print_stats()
-
-except KeyboardInterrupt:
-    pass
-
-finally:
-    print_stats()
+if __name__ == "__main__":
+    line_count = 0
+    try:
+        for line in sys.stdin:
+            line = line.strip()
+            parts = line.split()
+            if len(parts) >= 7:
+                try:
+                    status = parts[-2]
+                    size = int(parts[-1])
+                    global total_size
+                    total_size += size
+                    if status in status_codes:
+                        status_codes[status] += 1
+                except Exception:
+                    pass
+            line_count += 1
+            if line_count % 10 == 0:
+                print_stats()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        print_stats()
 
