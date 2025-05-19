@@ -15,12 +15,14 @@ status_codes = {
     '500': 0,
 }
 
+
 def print_stats():
     """Print the collected statistics."""
     print("File size: {}".format(total_size))
     for code in sorted(status_codes.keys()):
         if status_codes[code] > 0:
             print("{}: {}".format(code, status_codes[code]))
+
 
 if __name__ == "__main__":
     line_count = 0
@@ -32,7 +34,6 @@ if __name__ == "__main__":
                 try:
                     status = parts[-2]
                     size = int(parts[-1])
-                    global total_size
                     total_size += size
                     if status in status_codes:
                         status_codes[status] += 1
